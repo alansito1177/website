@@ -1,25 +1,30 @@
 *{
+  /* this will set the universal font for the page */
   font-family: monospace,serif,fantasy,sans-serif;
   margin: 0px;
   padding: 0px;
 }
 header{
+  /* colors the header and sets its height */
     background-color: grey;
     background-size: auto;
     height: 100px;
 }
 .cover{
+  /* this will set the cover image */
   background-image: url(images/headphones.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
 nav{
+  /* some more specific info on the navigation buttons like making them go to the right */
   padding: 15px;
   margin: auto;
   float: right;
 }
 main{
+  /* sets up the main page by setting the margin, the background color, the amount of empty space, and  the size */
   text-align: center;
   color: black;
   margin: 20px 20px 20px 20px;
@@ -29,11 +34,13 @@ main{
 }
 
 footer{
+  /* sets color for the bottom of the page */
   background-color: gray;
   padding: 10px;
 }
 
 .btn{
+  /* button pre built that can be added to links */
   display: inline-block;
   font-family: arial, sans-serif;
   font-size: 16px;
@@ -44,11 +51,13 @@ footer{
 }
 
 .btn-primary {
+  /* more specifics for the top right buttons */
   color: #fff;
   background-color: black;
   border-color: #2e6da4;
 }
 .btn-contact{
+  /* more specific for the contact buttons */
   color: white;
   background: black;
   border-color: #2e6da4;
@@ -57,6 +66,7 @@ footer{
 }
 
 .logo{
+  /* this is used for my logo image which will appear in the header and float to the left */
   height: auto;
   float: left;
   margin: 10px 10px 10px 10px;
@@ -65,6 +75,7 @@ footer{
 
 
 .intro{
+  /* sets empty space for my intro */
   background-color: silver;
   float: left;
   padding: 40px 40px 0 0;
@@ -72,6 +83,7 @@ footer{
   width: 35%;
 }
 .aboutMe{
+  /* sets empty space for the about me page */
   background-color: silver;
   float: right;
   padding: 40px 40px 0 0;
@@ -79,6 +91,7 @@ footer{
   width: 35%;
 }
 a:hover{
+  /* when hovering over a link/button, this will change its colors */
   color: black;
   background: white;
 }
