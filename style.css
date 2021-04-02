@@ -1,29 +1,68 @@
-*{
-  /* this will set the universal font for the page */
-  font-family: monospace,serif,fantasy,sans-serif;
-  margin: 0px;
-  padding: 0px;
+body {
+  margin: 0;
 }
-header{
-  /* colors the header and sets its height */
-    background-color: grey;
-    background-size: auto;
-    height: 100px;
+
+header {
+  background-color: grey;
+  margin-bottom: 40px;
 }
-.cover{
+
+header h1 {
+  font-family: "Gochi Hand";
+  font-size: 52px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+header img {
+  padding: 10px;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  width: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-family: Montserrat;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 25px 0 0;
+}
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  flex: 1;
+  margin: 10px;
+}
+.item-double {
+  flex: 2;
+}
+.cover {
   /* this will set the cover image */
   background-image: url(images/headphones.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 40vh;
 }
-nav{
-  /* some more specific info on the navigation buttons like making them go to the right */
-  padding: 15px;
-  margin: auto;
-  float: right;
-}
-main{
+main {
   /* sets up the main page by setting the margin, the background color, the amount of empty space, and  the size */
   text-align: center;
   color: black;
@@ -32,49 +71,7 @@ main{
   background-color: silver;
   background-size: cover;
 }
-
-footer{
-  /* sets color for the bottom of the page */
-  background-color: gray;
-  padding: 10px;
-}
-
-.btn{
-  /* button pre built that can be added to links */
-  display: inline-block;
-  font-family: arial, sans-serif;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 20px;
-}
-
-.btn-primary {
-  /* more specifics for the top right buttons */
-  color: #fff;
-  background-color: black;
-  border-color: #2e6da4;
-}
-.btn-contact{
-  /* more specific for the contact buttons */
-  color: white;
-  background: black;
-  border-color: #2e6da4;
-  margin: 15px;
-
-}
-
-.logo{
-  /* this is used for my logo image which will appear in the header and float to the left */
-  height: auto;
-  float: left;
-  margin: 10px 10px 10px 10px;
-  border-radius: 50%;
-}
-
-
-.intro{
+.intro {
   /* sets empty space for my intro */
   background-color: silver;
   float: left;
@@ -82,7 +79,7 @@ footer{
   height: 120px;
   width: 35%;
 }
-.aboutMe{
+.aboutMe {
   /* sets empty space for the about me page */
   background-color: silver;
   float: right;
@@ -90,8 +87,99 @@ footer{
   height: 120px;
   width: 35%;
 }
-a:hover{
-  /* when hovering over a link/button, this will change its colors */
-  color: black;
-  background: white;
+form label {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+article {
+  align-self: center;
+}
+button {
+  margin: 20px 20px 20px 20px;
+}
+footer {
+  /* sets color for the bottom of the page */
+  background-color: gray;
+  padding: 10px;
+}
+.btn-contact {
+  list-style: none;
+  text-decoration: none;
+  /* more specific for the contact buttons */
+  color: white;
+
+  margin: 15px;
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul li {
+  margin: 20px 20px 20px 20px;
+}
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  header img {
+    padding: 10px;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+  header h1 {
+    font-size: 42px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+  header nav ul li a {
+    font-family: Montserrat;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+
+  .btn {
+    display: inline-block;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+  }
+  .btn-primary {
+    color: #fff;
+    background-color: black;
+    border-color: #2e6da4;
+  }
+  a:hover {
+    color: black;
+    background: white;
+  }
+  .cover {
+    /* this will set the cover image */
+    background-image: url(images/headphones.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+  }
+  button:hover {
+    color: black;
+    background: white;
+  }
+  .btn-contact {
+    background: black;
+    border-color: #2e6da4;
+  }
 }

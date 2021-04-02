@@ -1,83 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- this is where my links to my stylesheets and the normalize stylesheet will go -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Alan's Website</title>
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan's Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <!-- my image is show using the code below on the navigation panel -->
-    <img class="logo" src="images/logo.jpg" alt="Alan's hand drawn logo">
-    <nav>
-      <a href="#info" class="btn btn-primary">Info</a>
-      <a href="#about" class="btn btn-primary">About Me</a>
-      <a href="#contact" class="btn btn-primary">Contact Info</a>
+    
+    <header>
+        <img src="/images/logo.jpg" alt="My Hand-Drawn Logo">
+        <h1>Alan</h1>
+        <nav>
+        <ul id="menu">
+            <li><a class="btn btn-primary" href="#">About Me</a></li>
+            <li><a class="btn btn-primary" href="#">Portfolio</a></li>
+            <li><a class="btn btn-primary" href="#">About Me</a></li>
+        </ul>
+        
     </nav>
-  </header>
-  <main>
-    <article>
-<!-- the div below shows my cover image -->
-    <div class="cover"></div>
-
-    <h1>Alan Silva</h1>
-    <h2>Hello I'm learning to code</h2>
-    <section id="info">
-
-      <h3>Info</h3>
-      <p>I'm Alan. I'm working on becoming a backend software
-      engineer.</p>
-      <p>Currently, I work remotely from home in Georgia</p>
-
+    </header>
+    <main class="group">
+        <article class="item">
+    <!-- the div below shows my cover image -->
+        <div class="cover"></div>
+    
+        <h1>Alan Silva</h1>
+        <h2>Hello I'm learning to code</h2>
+        <section id="info">
+    
+          <h3>Info</h3>
+          <p>I'm Alan. I'm working on becoming a backend software
+          engineer.</p>
+          <p>Currently, I work remotely from home in Georgia</p>
+    
+        </section>
+        <hr>
+        <section id="about">
+    
+    <h3>About Me</h3>
+    <p> I've always been really into computers. In my first year of high school
+    I began learning how to code C#. We had a project where we could make anything
+    that we could market so using my little knowledge I managed to make a playable
+    demo of a top down action rpg game. There was no greater feeling than when I hit play
+    and everything functioned how I wanted it to. It's a feeling that has stuck with me
+    and pushes me to want to learn more and make more projects. I'd like to work on projects
+    with a team to further my knowledge and get feedback on how I can improve.</p>
+    <p></p>
+    <p>Outside of coding, I like to:</p>
+    <!--here i make an unordered list to show all of hobbies outside of coding -->
+    <ul>
+      <li>Cook</li>
+      <li>Make Music</li>
+      <li>Play Video Games</li>
+      <li>Teach my Dog New Tricks</li>
+    </ul>
     </section>
     <hr>
-    <section id="about">
+    </article>
+    <article class="project">
+      <h3>Projects</h3>
 
-<h3>About Me</h3>
-<p> I've always been really into computers. In my first year of high school
-I began learning how to code C#. We had a project where we could make anything
-that we could market so using my little knowledge I managed to make a playable
-demo of a top down action rpg game. There was no greater feeling than when I hit play
-and everything functioned how I wanted it to. It's a feeling that has stuck with me
-and pushes me to want to learn more and make more projects. I'd like to work on projects
-with a team to further my knowledge and get feedback on how I can improve.</p>
-<p>Outside of coding, I like to:</p>
-<!--here i make an unordered list to show all of hobbies outside of coding -->
-<ul>
-  <li>Play Video Games</li>
-  <li>Make Music</li>
-  <li>Cook</li>
-  <li>Teach my Dog New Tricks</li>
-</ul>
-</section>
-<hr>
-</article>
-</main>
+      <div class="item">
 
-<footer>
-  <!-- this entire section will go at the bottom of the page and have links to contact me -->
-<section id="contact">
-<div>
-  <h3>Contact Info</h3>
-  <ol>
-  <li>
-  <a class="btn btn-contact" href="https://www.linkedin.com/in/alan-silva-8473b31ba" target="_blank">My Linkedin Profile</a>
-</li><li>
-  <a class="btn btn-contact" href="https://github.com/alansito1177" target="_blank">My Github</a>
-</li><li>
-  <a class="btn btn-contact" href="mailto:alansito1177@gmail.com" target="_blank">Email Me at alanstio1177@gmail.com</a>
-  </li>
-</ol>
-</div>
-</section>
-</footer>
+        <a href="https://github.com/alansito1177/starter-constellations-server" target="_blank" rel="noreffer noopener" class="btn btn-contact">
+          <h4>Constellation Server</h4>
+          <p>This server can gets book</p>
+          <img src="/images/Constellation.png" alt="image of Constellation" width="100%">
+        </a>
+
+        <a href="https://github.com/alansito1177/decoder-ring" target="_blank" rel="noreffer noopener" class="btn btn-contact">
+          <h4>Decoder Ring</h4>
+          <img src="/images/Code-Wheel.jpg" alt="image of Decoder Wheel" width="100%"> 
+        </a>
+
+        
+      
+      </div>
+      <hr>
+    </article>
+    <article  class="item">
+        <h3>Contact</h3>
+        <form action="https://formspree.io/f/mwkaedbw" method="POST">
+            <label>
+                Your Name:
+                <input type="text" name="First and Last name" id="Name" placeholder="Your name here" required>
+            </label>
+            <label>
+                Your email:
+                <input type="email" name="mail" placeholder="Your email" required>
+              </label>
+              <label>
+                Your message:
+                <textarea name="message" placeholder="Your message" required></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        
+    </article>
+    </main>
+
+    <footer>
+        <!-- this entire section will go at the bottom of the page and have links to contact me -->
+      <section id="contact">
+      <div>
+        <h3>Contact Info</h3>
+        <ul>
+        <li>
+        <a class="btn btn-contact" href="https://www.linkedin.com/in/alan-silva-8473b31ba" target="_blank">My Linkedin Profile</a>
+      </li><li>
+        <a class="btn btn-contact" href="https://github.com/alansito1177" target="_blank">My Github</a>
+      </li><li>
+        <a class="btn btn-contact" href="mailto:alansito1177@gmail.com" target="_blank">Email Me at alanstio1177@gmail.com</a>
+        </li>
+      </ul>
+      </div>
+      </section>
+      </footer>
 
 
 
