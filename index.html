@@ -1,54 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <title>Common Components &amp; Utilities</title>
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
-  </head>
-
-  <body class="container-fluid">
-    <div class="row">
-    <div class="card col-3 my-3 px-0 ">
-      <ul class="list-group list-group-flush ">
-        <li class="list-group-item bg-primary text-white">American Black Bear</li>
-        <li class="list-group-item ">Sloth Bear</li>
-        <li class="list-group-item">Sun Bear</li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <img src="images/logo.jpg" alt="My Hand-Drawn Logo">
+        <h1>Alan</h1>
+        <nav>
+        <ul id="menu">
+            <li><a class="btn btn-primary" href="#about">About Me</a></li>
+            <li><a class="btn btn-primary" href="#projects">Portfolio</a></li>
+            <li><a class="btn btn-primary" href="#contact">Contact</a></li>
+        </ul>
         
-      </ul>
-    </div>
-    <div class="col-7">
-      <div class="card my-3 px-0 lead">
-        <ul class="list-group list-group-flush">
-        <li class="list-group-item text-primary">
-           <button class="btn text-primary">Posts</button>
-           <button class="btn text-secondary">/ American Black Bear</button>
-          </li>
+    </nav>
+    </header>
+    <main class="group">
+        <article class="item">
+    <!-- the div below shows my cover image -->
+        <div class="cover"></div>
+    
+        <h1>Alan Silva</h1>
+        <h2>Hello I'm learning to code</h2>
+        <section id="info">
+    
+          <h3>Info</h3>
+          <p>I'm Alan. I'm working on becoming a backend software
+          engineer.</p>
+          <p>Currently, I work remotely from home in Georgia</p>
+    
+        </section>
+        <hr>
+
+  <section id="about">
+    
+    <h3>About Me</h3>
+    <p> I've always been really into computers. In my first year of high school
+    I began learning how to code C#. We had a project where we could make anything
+    that we could market so using my little knowledge I managed to make a playable
+    demo of a top down action RPG game. There was no greater feeling than when I hit play
+    and everything functioned how I wanted it to. It's a feeling that has stuck with me
+    and pushes me to want to learn more and make more projects. I'd like to work on projects
+    with a team to further my knowledge and get feedback on how I can improve.</p>
+
+    <h3>Services</h3>
+    <p>I can offer Express BackEnd Development, React Development, and JavaScript Development.
+      I can also make custom interactable canvas elements in HTML.
+    </p>
+    <p>Outside of coding, I like to:</p>
+    <!--here i make an unordered list to show all of hobbies outside of coding -->
+    <ul>
+      <li>Cook</li>
+      <li>Make Music</li>
+      <li>Play Video Games</li>
+      <li>Teach my Dog New Tricks</li>
+    </ul>
+    </section>
+    <hr>
+    </article>
+    <article class="project" id="projects">
+      <h3>Projects</h3>
+
+      <div class="item">
+
+        <a href="https://github.com/alansito1177/Completed-Library" target="_blank" rel="noreffer noopener" class="btn btn-contact">
+          <h4>Library Server</h4>
+          <p>I used json to store book info and allow me to grab the information of a given id at anytime.</p>
+          <p>The stack used was base HTML, CSS, and JavaScript</p>
+          <p>The following image sends you to the GitHub Repository.</p>
+          <img src="images/Books.png" alt="image of Constellation">
+        </a>
       </div>
-    <div class="jumbotron rw">
-      <h4>American Black Bears</h4>
-      <hr class="my-3">
-      <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
-        venenatis nulla purus, eu viverra risus euismod vel. Aliquam eu gravida tortor. 
-        Fusce pulvinar vel elit non mollis. Duis urna augue, tristique ac porttitor in, 
-        elementum a dui. Nunc varius euismod ligula eu tempor. Fusce fringilla risus nunc, 
-        sit amet mollis est elementum id. Cras dictum, augue sit amet pharetra ultrices, 
-        tellus lorem scelerisque dui, id imperdiet mi sem eget dolor.
-      </p>
-      <a class="btn btn-warning btn-lg" href="#" role="button">Learn more</a>
-    </div>
-  </div>
-  </body>
+        
+        <div class="item">
+          <a href="#">PLACE_HOLDER_LINK_TO_LIVE_PROJECT.COM</a>
+        </div>
+        <div class="item">
+        <a href="https://github.com/alansito1177/decoder-ring" target="_blank" rel="noreffer noopener" class="btn btn-contact">
+          <h4>Decoder Ring</h4>
+          <p>This project allows you to encode and decode messages using different cipher types</p>
+          <p>The stack used was base HTML, CSS, and JavaScript</p>
+          <p>The following image sends you to the GitHub Repository</p>
+          <img src="images/Code-Wheel.jpg" alt="image of Decoder Wheel"> 
+        </a>
+        
+      </div>
+      <div class="item"><a href="#">PLACE_HOLDER_LINK_TO_LIVE_PROJECT.COM</a></div>
+      <hr>
+    </article>
+    <article  class="item">
+        <h3>Contact</h3>
+        <form action="https://formspree.io/f/mwkaedbw" method="POST">
+            <label>
+                Your Name:
+                <input type="text" name="First and Last name" id="Name" placeholder="Your name here" required>
+            </label>
+            <label>
+                Your email:
+                <input type="email" name="mail" placeholder="Your email" required>
+              </label>
+              <label>
+                Your message:
+                <textarea name="message" placeholder="Your message" required></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        
+    </article>
+    </main>
+
+    <footer>
+        <!-- this entire section will go at the bottom of the page and have links to contact me -->
+      <section id="contact">
+      <div>
+        <h3>Contact Info</h3>
+        <ul>
+        <li>
+        <a class="btn btn-contact" href="https://www.linkedin.com/in/alan-silva-8473b31ba" target="_blank">My LinkedIn Profile</a>
+      </li><li>
+        <a class="btn btn-contact" href="https://github.com/alansito1177" target="_blank">My GitHub</a>
+      </li><li>
+        <a class="btn btn-contact" href="mailto:alansito1177@gmail.com" target="_blank">Email Me at alanstio1177@gmail.com</a>
+        </li>
+      </ul>
+      </div>
+      </section>
+      </footer>
+
+
+
+</body>
 </html>
