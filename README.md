@@ -1,2 +1,2 @@
 # website
-This is my first website made for Thinkful's program
+This is my first website and it's made for Thinkful's program
